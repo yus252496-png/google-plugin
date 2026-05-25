@@ -24,6 +24,32 @@
       <button id="fetchBtn" class="btn btn-primary">开始获取</button>
     </div>
 
+    <div class="settings-section">
+      <button id="settingsToggle" class="settings-toggle">⚙ 翻译设置</button>
+      <div id="settingsPanel" class="settings-panel hidden">
+        <div class="input-group">
+          <label for="transProvider">翻译服务</label>
+          <select id="transProvider">
+            <option value="google">Google 翻译（需VPN，无需配置）</option>
+            <option value="baidu">百度翻译（国内可用，需密钥）</option>
+          </select>
+        </div>
+        <div id="baiduConfig" class="baidu-config">
+          <p class="settings-hint">申请地址：<a href="https://api.fanyi.baidu.com/register" target="_blank">api.fanyi.baidu.com</a> → 通用翻译 API（免费100万字符/月）</p>
+          <div class="input-group">
+            <label for="baiduAppId">APP ID</label>
+            <input type="text" id="baiduAppId" placeholder="请输入 APP ID">
+          </div>
+          <div class="input-group">
+            <label for="baiduSecret">密钥 (Secret Key)</label>
+            <input type="password" id="baiduSecret" placeholder="请输入密钥">
+          </div>
+        </div>
+        <button id="saveSettingsBtn" class="btn btn-primary">保存设置</button>
+        <span id="settingsStatus" class="settings-status"></span>
+      </div>
+    </div>
+
     <div id="status" class="status"></div>
 
     <div id="loading" class="loading hidden">

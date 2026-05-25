@@ -289,3 +289,120 @@ h1 {
 .empty-state.hidden {
   display: none;
 }
+
+/* ---------- Settings ---------- */
+.settings-section {
+  margin-bottom: 16px;
+}
+
+.settings-toggle {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background: none;
+  border: 1px dashed #d0d5dd;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.settings-toggle:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.settings-panel {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.settings-panel.hidden {
+  display: none;
+}
+
+.settings-hint {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.settings-link {
+  font-size: 11px;
+  color: #2563eb;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.settings-link a {
+  color: #2563eb;
+}
+
+.settings-panel .input-group {
+  margin-bottom: 10px;
+}
+
+.settings-panel .input-group input[type="text"],
+.settings-panel .input-group input[type="password"],
+.settings-panel .input-group select {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.settings-panel .input-group select {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+.settings-panel .input-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.baidu-config {
+  margin-top: 8px;
+}
+
+.baidu-config .settings-hint {
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.baidu-config .settings-hint a {
+  color: #2563eb;
+}
+
+.settings-panel .input-group input[type="text"]:focus,
+.settings-panel .input-group input[type="password"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.settings-panel .btn {
+  width: auto;
+  padding: 8px 20px;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.settings-status {
+  font-size: 12px;
+  color: #059669;
+  margin-left: 10px;
+}

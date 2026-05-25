@@ -3,9 +3,10 @@
   "name": "CNBC News Collector",
   "version": "1.0.0",
   "description": "获取CNBC世界新闻，翻译为中文并导出Word文档",
-  "permissions": [],
+  "permissions": ["storage"],
   "host_permissions": [
     "https://www.cnbc.com/*",
+    "https://api.fanyi.baidu.com/*",
     "https://translate.googleapis.com/*"
   ],
   "icons": {
