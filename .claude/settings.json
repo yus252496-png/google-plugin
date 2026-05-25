@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/ClawWork/**)",
+      "Read(//d/ClawWork/google-plugin/**)",
+      "Bash(mkdir -p \"d:/ClawWork/google-plugin/popup\" \"d:/ClawWork/google-plugin/icons\")",
+      "Bash(node \"d:/ClawWork/google-plugin/scripts/generate-icons.js\")"
+    ],
+    "additionalDirectories": [
+      "d:\\ClawWork\\google-plugin"
+    ]
+  }
+}

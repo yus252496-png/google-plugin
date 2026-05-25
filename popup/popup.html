@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>CNBC News Collector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <h1>CNBC 新闻采集器</h1>
+        <button id="closeBtn" class="close-btn" title="关闭窗口">&times;</button>
+      </div>
+      <p class="subtitle">获取 CNBC 世界新闻，翻译为中文并导出 Word 文档</p>
+    </header>
+
+    <div class="controls">
+      <div class="input-group">
+        <label for="hours">获取过去</label>
+        <input type="number" id="hours" min="1" max="168" value="24">
+        <label>小时内的新闻</label>
+      </div>
+      <button id="fetchBtn" class="btn btn-primary">开始获取</button>
+    </div>
+
+    <div id="status" class="status"></div>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <span id="loadingText">正在处理...</span>
+    </div>
+
+    <div id="preview" class="preview hidden"></div>
+
+    <div id="downloadSection" class="download-section hidden">
+      <button id="downloadBtn" class="btn btn-success">下载 Word 文档</button>
+    </div>
+
+    <div id="emptyState" class="empty-state">
+      <p>设置获取时间范围，点击"开始获取"按钮获取 CNBC 热点新闻</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

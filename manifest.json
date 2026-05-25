@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "CNBC News Collector",
+  "version": "1.0.0",
+  "description": "获取CNBC世界新闻，翻译为中文并导出Word文档",
+  "permissions": [],
+  "host_permissions": [
+    "https://www.cnbc.com/*",
+    "https://translate.googleapis.com/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "CNBC News Collector"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
